@@ -1,0 +1,27 @@
+/* 
+  Localizable.strings
+  ToDoDays
+
+  Created by xvacid on 06/11/2018.
+  Copyright © 2018 WSG4FUN. All rights reserved.
+*/
+"start_task_button" = "Start";
+"used_time_tasks" = "Распределено\nвремени:\n %i/24 ч.";
+"new_task_caption" = "НОВАЯ ЗАДАЧА";
+"start_task_text" = "Начало";
+"end_task_text" = "Конец";
+"add_task_button" = "Добавить";
+"update_task_button" = "Обновить";
+"task_name_caption_placeholder" = "Укажите название";
+"add_task_empty_caption" = "Для добавления новой задачи укажите название";
+"ok_button" = "ОК";
+"task_time_from_to_text" = "С %@ до %@";
+"delete_task_caption" = "Вы точно хотите удалить задание?";
+"add_task_wrong_date" = "Невозможно добавить задачу, так как указанное время уже занято";
+"yes_button" = "Да";
+"no_button" = "Нет";
+"" = "";
+"" = "";
+"" = "";
+"" = "";
+

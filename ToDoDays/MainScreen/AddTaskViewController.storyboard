@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Wxj-pF-1t8">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Add Task View Controller-->
+        <scene sceneID="yOL-XA-vRD">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" modalTransitionStyle="crossDissolve" modalPresentationStyle="overFullScreen" id="Wxj-pF-1t8" customClass="AddTaskViewController" customModule="ToDoDays" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="S2L-Ta-Gq7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nrh-P0-Vib">
+                                <rect key="frame" x="8" y="233" width="359" height="363"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iSA-i9-1EK">
+                                        <rect key="frame" x="0.0" y="0.0" width="359" height="47"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="НОВАЯ ЗАДАЧА" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dNX-RH-yJV">
+                                                <rect key="frame" x="8" y="8" width="343" height="31"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="31" id="OQF-3w-xHG"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.59215686274509804" green="0.59215686274509804" blue="0.59215686274509804" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="dNX-RH-yJV" firstAttribute="bottom" secondItem="iSA-i9-1EK" secondAttribute="bottomMargin" id="NXa-Wm-qib"/>
+                                            <constraint firstItem="dNX-RH-yJV" firstAttribute="top" secondItem="iSA-i9-1EK" secondAttribute="topMargin" id="UiD-gt-W64"/>
+                                            <constraint firstItem="dNX-RH-yJV" firstAttribute="trailing" secondItem="iSA-i9-1EK" secondAttribute="trailingMargin" id="eMq-JI-rq6"/>
+                                            <constraint firstItem="dNX-RH-yJV" firstAttribute="leading" secondItem="iSA-i9-1EK" secondAttribute="leadingMargin" id="h6G-I8-xYz"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fwr-dd-Hoq">
+                                        <rect key="frame" x="8" y="55" width="343" height="35"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Введите название" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="igQ-2c-plW">
+                                                <rect key="frame" x="8" y="0.0" width="327" height="35"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="35" id="zxE-Ah-eJW"/>
+                                                </constraints>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="igQ-2c-plW" secondAttribute="bottom" id="E1e-Td-Nng"/>
+                                            <constraint firstItem="igQ-2c-plW" firstAttribute="trailing" secondItem="Fwr-dd-Hoq" secondAttribute="trailingMargin" id="O4M-vH-3kN"/>
+                                            <constraint firstItem="igQ-2c-plW" firstAttribute="top" secondItem="Fwr-dd-Hoq" secondAttribute="top" id="QVc-wF-Mdm"/>
+                                            <constraint firstItem="igQ-2c-plW" firstAttribute="leading" secondItem="Fwr-dd-Hoq" secondAttribute="leadingMargin" id="Zzo-oN-hTA"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Начало задачи" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pf0-2U-t2m">
+                                        <rect key="frame" x="16" y="98" width="327" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="L4p-Xr-EDB"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="5" translatesAutoresizingMaskIntoConstraints="NO" id="8db-er-Ew2">
+                                        <rect key="frame" x="16" y="126" width="327" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="8Q7-Vv-Av7"/>
+                                        </constraints>
+                                        <date key="date" timeIntervalSinceReferenceDate="565183923.40928698">
+                                            <!--2018-11-29 11:32:03 +0000-->
+                                        </date>
+                                        <connections>
+                                            <action selector="onStartDateValueChanged:" destination="Wxj-pF-1t8" eventType="valueChanged" id="SZG-1E-rCq"/>
+                                        </connections>
+                                    </datePicker>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Начало задачи" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AsR-mp-oX4">
+                                        <rect key="frame" x="16" y="234" width="327" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="8n2-Yw-Y7P"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="5" translatesAutoresizingMaskIntoConstraints="NO" id="huc-ow-ZFe">
+                                        <rect key="frame" x="16" y="262" width="327" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="Ld0-P8-apu"/>
+                                        </constraints>
+                                        <date key="date" timeIntervalSinceReferenceDate="565183923.40928698">
+                                            <!--2018-11-29 11:32:03 +0000-->
+                                        </date>
+                                        <connections>
+                                            <action selector="OnEndDateValueChanged:" destination="Wxj-pF-1t8" eventType="valueChanged" id="yAh-f4-yuX"/>
+                                        </connections>
+                                    </datePicker>
+                                </subviews>
+                                <color key="backgroundColor" red="0.38039215686274508" green="0.38039215686274508" blue="0.38039215686274508" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="8db-er-Ew2" firstAttribute="top" secondItem="pf0-2U-t2m" secondAttribute="bottom" constant="8" symbolic="YES" id="3Jw-PD-ecj"/>
+                                    <constraint firstItem="Fwr-dd-Hoq" firstAttribute="top" secondItem="iSA-i9-1EK" secondAttribute="bottom" constant="8" symbolic="YES" id="5yz-ej-B9s"/>
+                                    <constraint firstItem="8db-er-Ew2" firstAttribute="leading" secondItem="AsR-mp-oX4" secondAttribute="leading" id="705-fL-eap"/>
+                                    <constraint firstItem="Fwr-dd-Hoq" firstAttribute="centerX" secondItem="pf0-2U-t2m" secondAttribute="centerX" id="BqM-3p-sMd"/>
+                                    <constraint firstItem="iSA-i9-1EK" firstAttribute="top" secondItem="nrh-P0-Vib" secondAttribute="top" id="JiN-YJ-1wS"/>
+                                    <constraint firstItem="AsR-mp-oX4" firstAttribute="leading" secondItem="huc-ow-ZFe" secondAttribute="leading" id="LIE-7g-K1i"/>
+                                    <constraint firstItem="pf0-2U-t2m" firstAttribute="trailing" secondItem="8db-er-Ew2" secondAttribute="trailing" id="Su6-rR-XTG"/>
+                                    <constraint firstAttribute="trailing" secondItem="iSA-i9-1EK" secondAttribute="trailing" id="TiF-7E-OTf"/>
+                                    <constraint firstItem="pf0-2U-t2m" firstAttribute="leading" secondItem="8db-er-Ew2" secondAttribute="leading" id="TpF-YV-ooy"/>
+                                    <constraint firstItem="AsR-mp-oX4" firstAttribute="top" secondItem="8db-er-Ew2" secondAttribute="bottom" constant="8" symbolic="YES" id="VSu-8f-12O"/>
+                                    <constraint firstItem="huc-ow-ZFe" firstAttribute="bottom" secondItem="nrh-P0-Vib" secondAttribute="bottomMargin" constant="7" id="WXI-6B-5Hp"/>
+                                    <constraint firstItem="Fwr-dd-Hoq" firstAttribute="top" secondItem="nrh-P0-Vib" secondAttribute="top" constant="55" id="Wdv-Wb-6EN"/>
+                                    <constraint firstItem="iSA-i9-1EK" firstAttribute="leading" secondItem="nrh-P0-Vib" secondAttribute="leading" id="a8A-tr-hgl"/>
+                                    <constraint firstItem="iSA-i9-1EK" firstAttribute="centerX" secondItem="Fwr-dd-Hoq" secondAttribute="centerX" id="amI-Bf-CxC"/>
+                                    <constraint firstItem="pf0-2U-t2m" firstAttribute="leading" secondItem="nrh-P0-Vib" secondAttribute="leading" constant="16" id="eeT-wx-2Vj"/>
+                                    <constraint firstItem="pf0-2U-t2m" firstAttribute="top" secondItem="Fwr-dd-Hoq" secondAttribute="bottom" constant="8" symbolic="YES" id="gQY-5q-ydc"/>
+                                    <constraint firstItem="Fwr-dd-Hoq" firstAttribute="leading" secondItem="nrh-P0-Vib" secondAttribute="leadingMargin" id="nOV-uy-xLe"/>
+                                    <constraint firstItem="8db-er-Ew2" firstAttribute="trailing" secondItem="AsR-mp-oX4" secondAttribute="trailing" id="oO5-fR-npM"/>
+                                    <constraint firstItem="huc-ow-ZFe" firstAttribute="top" secondItem="AsR-mp-oX4" secondAttribute="bottom" constant="8" symbolic="YES" id="r73-Ze-mi4"/>
+                                    <constraint firstItem="AsR-mp-oX4" firstAttribute="trailing" secondItem="huc-ow-ZFe" secondAttribute="trailing" id="wbm-0t-pTH"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hav-NP-LHS">
+                                <rect key="frame" x="8" y="604" width="359" height="55"/>
+                                <color key="backgroundColor" red="0.61568627450980395" green="0.61568627450980395" blue="0.61568627450980395" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="n8d-b9-P9t"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="onPressedAddTask:" destination="Wxj-pF-1t8" eventType="touchUpInside" id="hMi-G0-Pa3"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.098039215686274508" green="0.098039215686274508" blue="0.098039215686274508" alpha="0.75426166373239434" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="nrh-P0-Vib" firstAttribute="leading" secondItem="sER-Mh-ZZZ" secondAttribute="leading" constant="8" id="5oH-CD-aiW"/>
+                            <constraint firstItem="sER-Mh-ZZZ" firstAttribute="trailing" secondItem="nrh-P0-Vib" secondAttribute="trailing" constant="8" id="EzJ-MI-K2w"/>
+                            <constraint firstItem="Hav-NP-LHS" firstAttribute="top" secondItem="nrh-P0-Vib" secondAttribute="bottom" constant="8" id="FFs-lY-0sl"/>
+                            <constraint firstItem="sER-Mh-ZZZ" firstAttribute="bottom" secondItem="Hav-NP-LHS" secondAttribute="bottom" constant="8" id="NMY-ft-QRJ"/>
+                            <constraint firstItem="Hav-NP-LHS" firstAttribute="leading" secondItem="sER-Mh-ZZZ" secondAttribute="leading" constant="8" id="Rbe-6z-f1D"/>
+                            <constraint firstItem="sER-Mh-ZZZ" firstAttribute="trailing" secondItem="Hav-NP-LHS" secondAttribute="trailing" constant="8" id="S9l-8k-Duj"/>
+                            <constraint firstItem="nrh-P0-Vib" firstAttribute="centerX" secondItem="S2L-Ta-Gq7" secondAttribute="centerX" id="aex-8I-KNH"/>
+                            <constraint firstItem="nrh-P0-Vib" firstAttribute="top" relation="greaterThanOrEqual" secondItem="sER-Mh-ZZZ" secondAttribute="top" constant="26" id="c1K-ym-9rb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="sER-Mh-ZZZ"/>
+                    </view>
+                    <connections>
+                        <outlet property="coverView" destination="nrh-P0-Vib" id="J29-nf-MQC"/>
+                        <outlet property="createButton" destination="Hav-NP-LHS" id="dcQ-YD-crm"/>
+                        <outlet property="endTaskDataPicker" destination="huc-ow-ZFe" id="1AQ-1E-Dmg"/>
+                        <outlet property="endTaskLabel" destination="AsR-mp-oX4" id="TwS-8c-QP3"/>
+                        <outlet property="mainView" destination="S2L-Ta-Gq7" id="tWZ-Pu-0wi"/>
+                        <outlet property="newTaskCaption" destination="dNX-RH-yJV" id="hGb-6y-WFG"/>
+                        <outlet property="startTaskDataPicker" destination="8db-er-Ew2" id="fOn-SV-t5m"/>
+                        <outlet property="startTaskLabel" destination="pf0-2U-t2m" id="9kh-sW-HZP"/>
+                        <outlet property="taskNameTextField" destination="igQ-2c-plW" id="kEw-gK-iZv"/>
+                        <outlet property="taskNameView" destination="Fwr-dd-Hoq" id="LHn-E7-f74"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AUU-l9-ofK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-151.875" y="100"/>
+        </scene>
+    </scenes>
+</document>
